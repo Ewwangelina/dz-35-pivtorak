@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>dz35Forms</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-$END$
+<body class="body container">
+<form id="registration-form">
+    <label for="first-name">Имя:</label>
+    <input type="text" id="first-name" name="first-name" required>
+
+    <label for="last-name">Фамилия:</label>
+    <input type="text" id="last-name" name="last-name" required>
+
+    <label for="birthdate">Дата рождения:</label>
+    <input type="text" id="birthdate" name="birthdate" required>
+
+    <label>Пол:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Мужской</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Женский</label>
+
+    <label for="city">Город:</label>
+    <select id="city" name="city" required>
+        <option value="">Выберите город</option>
+        <option value="Odessa">Одесса</option>
+        <option value="Nikolaev">Николаев</option>
+        <option value="Chernivtsi">Черновцы</option>
+    </select>
+
+    <label for="address">Адрес:</label>
+    <textarea id="address" name="address"></textarea>
+
+    <label>Языки, которыми владеете:</label>
+    <input type="checkbox" id="russian" name="languages" value="russian">
+    <label for="russian">Русский</label>
+    <input type="checkbox" id="english" name="languages" value="english">
+    <label for="english">Английский</label>
+    <input type="checkbox" id="french" name="languages" value="french">
+    <label for="french">Французский</label>
+
+    <button type="submit" id="save-btn">Сохранить</button>
+</form>
+
+<div>
+    <table id="table-container"></table>
+</div>
+
+<script src="table.js"></script>
+
+
 </body>
 </html>
