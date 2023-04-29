@@ -55,4 +55,3 @@ form.addEventListener('submit', (event) => {
     tableContainer.innerHTML = '';
     tableContainer.appendChild(table);
 });
-
